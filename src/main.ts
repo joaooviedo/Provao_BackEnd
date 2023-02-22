@@ -12,12 +12,13 @@ async function bootstrap() {
   app.set('trust proxy', 1);
 
   app.useGlobalPipes(new ValidationPipe());
-  
+
 
   const config = new DocumentBuilder()
     .setTitle('API')
     .setDescription('The super API description')
     .setVersion('1.0')
+    .addTag("status")
     .addTag('user')
     .addTag('auth')
     .addBearerAuth()
