@@ -36,7 +36,7 @@ export class UserRepository {
     } catch (err) {
       throw new Exception(
         Exceptions.DatabaseException,
-        'Nome, email ou senha já registrada.',
+        ' Email já registrado.',
       );
     }
   }

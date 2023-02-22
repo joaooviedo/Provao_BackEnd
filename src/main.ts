@@ -16,6 +16,7 @@ async function bootstrap() {
     .setTitle('API')
     .setDescription('The super API description')
     .setVersion('1.0')
+    .addTag("user")
     .addTag("auth")
     .addBearerAuth()
     .build();
