@@ -5,7 +5,7 @@ export class AppService {
   getAppStatus(baseUrl: string) {
     return {
       status: "Server is running! 🚀",
-      docs: baseUrl + "/api"
+      docs: baseUrl + "/"
     };
   }
 }
