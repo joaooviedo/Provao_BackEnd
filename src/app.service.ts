@@ -1,13 +1,8 @@
-import { Injectable } from "@nestjs/common";
-import { ApiTags } from "@nestjs/swagger";
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
-@ApiTags('status')
 export class AppService {
-  getAppStatus(baseUrl: string) {
-    return {
-      status: "Server is running! 🚀",
-      docs: baseUrl + "/"
-    };
+  getAppStatus(baseUrl: string): string {
+    return `Server is running! 🚀\n Please check ${baseUrl}/api/docs for Swagger docs...`;
   }
 }
