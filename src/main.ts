@@ -19,8 +19,8 @@ async function bootstrap() {
     .setDescription('The super API description')
     .setVersion('1.0')
     .addTag("status")
-    .addTag('user')
     .addTag('auth')
+    .addTag('user')
     .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
